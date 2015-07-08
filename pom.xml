@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <parent>
+        <groupId>ro.teamnet.bootstrap</groupId>
+        <artifactId>bootstrap-dependencies</artifactId>
+        <version>0.2-SNAPSHOT</version>
+        <relativePath />
+    </parent>
+	
+	<groupId>ro.teamnet.neo</groupId>
+    <artifactId>app-neo4j-dependencies</artifactId>
+    <version>0.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+	<properties>
+        <bootstrap.version>0.2-SNAPSHOT</bootstrap.version>
+        <spring-data-neo4j.version>3.2.1.RELEASE</spring-data-neo4j.version>
+	</properties>
+    <distributionManagement>
+        <repository>
+            <id>tni-hq-artifact</id>
+            <name>tni-hq-artifact-releases</name>
+            <url>http://repo.teamnet.ro/tn-components</url>
+        </repository>
+        <snapshotRepository>
+            <id>tni-hq-artifact</id>
+            <name>tni-hq-artifact-snapshots</name>
+            <url>http://repo.teamnet.ro/tn-components</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>tni-hq-artifact</id>
+            <name>tni-hq-artifact-releases</name>
+            <url>http://repo.teamnet.ro/tn-components</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+		<!-- Project dependencies -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-rest</artifactId>
+            <version>${spring-data-neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-tx</artifactId>
+            <version>${spring-data-neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-aspects</artifactId>
+            <version>${spring-data-neo4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate.javax.persistence</groupId>
+                    <artifactId>hibernate-jpa-2.0-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-cross-store</artifactId>
+            <version>${spring-data-neo4j.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>
