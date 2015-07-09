@@ -70,6 +70,12 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-neo4j-cross-store</artifactId>
             <version>${spring-data-neo4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate.javax.persistence</groupId>
+                    <artifactId>hibernate-jpa-2.0-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
