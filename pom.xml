@@ -5,7 +5,7 @@
     <parent>
         <groupId>ro.teamnet.bootstrap</groupId>
         <artifactId>bootstrap-dependencies</artifactId>
-        <version>0.2.11-SNAPSHOT</version>
+        <version>0.2.11</version>
         <relativePath />
     </parent>
 	
@@ -14,7 +14,7 @@
     <version>0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 	<properties>
-        <bootstrap.version>0.2.10-SNAPSHOT</bootstrap.version>
+        <bootstrap.version>0.2.11</bootstrap.version>
         <spring-data-neo4j.version>3.2.1.RELEASE</spring-data-neo4j.version>
 	</properties>
     <distributionManagement>
