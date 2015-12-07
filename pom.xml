@@ -13,10 +13,13 @@
     <artifactId>app-neo4j-dependencies</artifactId>
     <version>0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
+	
 	<properties>
         <bootstrap.version>0.2.12</bootstrap.version>
+        <app-neo4j-ou.version>0.3-SNAPSHOT</app-neo4j-ou.version>
         <spring-data-neo4j.version>3.2.1.RELEASE</spring-data-neo4j.version>
 	</properties>
+	
     <distributionManagement>
         <repository>
             <id>tni-hq-artifact</id>
