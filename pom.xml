@@ -7,13 +7,13 @@
     <parent>
         <groupId>ro.teamnet.bootstrap</groupId>
         <artifactId>bootstrap-dependencies</artifactId>
-        <version>0.2-SNAPSHOT</version>
+        <version>0.2.13-SNAPSHOT</version>
         <relativePath />
     </parent>
 	
 	<groupId>ro.teamnet.neo</groupId>
     <artifactId>app-neo4j-dependencies</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.3</version>
     <packaging>pom</packaging>
 	<properties>
         <bootstrap.version>0.2-SNAPSHOT</bootstrap.version>
