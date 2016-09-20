@@ -11,7 +11,7 @@
 	
 	<groupId>ro.teamnet.neo</groupId>
     <artifactId>app-neo4j-dependencies</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <version>0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 	
 	<properties>
