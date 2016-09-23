@@ -16,7 +16,7 @@
 	
 	<properties>
         <bootstrap.version>0.2.14</bootstrap.version>
-        <app-neo4j-ou.version>0.3-SNAPSHOT</app-neo4j-ou.version>
+        <app-neo4j-ou.version>0.6-SNAPSHOT</app-neo4j-ou.version>
         <spring-data-neo4j.version>3.2.1.RELEASE</spring-data-neo4j.version>
 	</properties>
 	
