@@ -7,18 +7,21 @@
     <parent>
         <groupId>ro.teamnet.bootstrap</groupId>
         <artifactId>bootstrap-dependencies</artifactId>
-        <version>0.2.13-SNAPSHOT</version>
+        <version>0.2.15</version>
         <relativePath />
     </parent>
 	
 	<groupId>ro.teamnet.neo</groupId>
     <artifactId>app-neo4j-dependencies</artifactId>
-    <version>0.3</version>
+    <version>0.8-SNAPSHOT</version>
     <packaging>pom</packaging>
+
 	<properties>
-        <bootstrap.version>0.2-SNAPSHOT</bootstrap.version>
+        <bootstrap.version>0.2.15</bootstrap.version>
+        <app-neo4j-ou.version>0.3-SNAPSHOT</app-neo4j-ou.version>
         <spring-data-neo4j.version>3.2.1.RELEASE</spring-data-neo4j.version>
 	</properties>
+
     <distributionManagement>
         <repository>
             <id>tni-hq-artifact</id>
@@ -79,4 +82,24 @@
         </dependency>
 
     </dependencies>
+
+	<scm>
+        <url>http://git-components.teamnet.ro/summary/components%2Fjava%2Fplatform-extensions%2Fapp-neo4j-dependencies.git</url>
+        <connection>scm:git:http://component-publisher@git-components.teamnet.ro/r/components/java/platform-extensions/app-neo4j-dependencies.git</connection>
+        <tag>v0.6</tag>
+    </scm>
+
+    <build>
+        <plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+		</plugins>
+	</build>
 </project>
